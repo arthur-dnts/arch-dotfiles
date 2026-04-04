@@ -1,0 +1,63 @@
+configuration {
+    show-icons: true;
+    display-drun: "Apps: ";
+    drun-display-format: "{icon} {name}";
+}
+
+/* Import the pywal generated rasi file */
+@import "themes/conky.rasi"
+
+* {
+    /* Mapping pywal variables to your layout names */
+    bg-col:       #2E3440E0;
+    fg-col:       #81A1C1;
+    selected-col: #81A1C1;     /* Using an accent for the selection */
+    border-col:   #2E3440E0;
+    
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+window {
+    width: 650px;
+    height: 450px;
+    anchor: center;
+    location: center;
+    border: 6px;
+    border-radius: 12px;
+    border-color: @bg-col;
+    
+    /* Layout with wallpaper preview on the left */
+    orientation: horizontal;
+    children: [ "imagebox", "mainbox" ];
+}
+
+/* This box shows the wallpaper */
+imagebox {
+    expand: false;
+    width: 300px;
+    /* We use a symlink so this path never has to change in the config */
+    background-image: url("images/side-image.jpg", height); 
+    border-radius: 10px 0px 0px 10px;
+}
+
+mainbox {
+    padding: 20px;
+    children: [ "inputbar", "listview" ];
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    spacing: 8px;
+}
+
+element {
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+
+element selected {
+    background-color: @selected-col;
+    text-color: @bg-col;
+}

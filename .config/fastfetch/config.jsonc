@@ -1,0 +1,81 @@
+
+{
+  "logo": {
+    "source": "~/.config/fastfetch/logos/logo.png",
+    "type": "auto",
+    "color": { "2": "blue" },
+    "height": 12,
+    "padding": {
+      "top": 1,
+      "right": 1,
+      "left": 2
+    }
+  },
+
+  "display": {
+    "separator": " "
+  },
+
+  "modules": [
+    {
+	"key": " ",
+	"type": "custom"
+    },
+    {
+	"key": "╭───────────╮",
+	"type": "custom"
+    },
+    {
+	"key": "│ {#31} User    {#keys}│",
+	"type": "title"
+    },
+    {
+	"key": "│ {#33}󰅐 Uptime  {#keys}│",
+	"type": "uptime"
+    },
+    {
+	"key": "│ {#32}󰹑 Display {#keys}│",
+	"type": "display",
+	"compactType": "original-with-refresh-rate"
+    },
+    {
+	"key": "│ {#34}󰣇 Distro  {#keys}│",
+	"type": "os"
+    },
+    {
+	"key": "│ {#38} WM      {#keys}│",
+	"type": "wm"
+    },
+    {
+	"key": "│ {#31}󰇄 Desktop {#keys}│",
+	"type": "de"
+    },
+    {
+	"type": "packages",
+	"key": "│ {#31}󰏖 Apps    {#keys}│"
+    },
+    {
+	"key": "│ {#32} Shell   {#keys}│",
+	"type": "shell"
+    },
+    {
+	"key": "│ {#33} Term    {#keys}│",
+	"type": "terminal"
+    },
+    {
+	"key": "├───────────┤",
+	"type": "custom"
+    },
+    {
+	"key": "│ {#39} Colors  {#keys}│",
+	"type": "colors",
+	"symbol": "circle"
+    },
+    {
+	"key": "╰───────────╯",
+	"type": "custom"
+    }
+  ]
+}
+
+
