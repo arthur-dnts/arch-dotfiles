@@ -27,7 +27,8 @@
 
 ### Theme and cursor
 
-- [Nordic Darker GTK Theme](https://www.gnome-look.org/p/1267246) (Theme and Icons)
+- [Nordic Darker GTK Theme](https://www.gnome-look.org/p/1267246) (Theme)
+- [Papirus White](https://www.gnome-look.org/p/1166289/) (Icons)
 - [Ruri Rinka Cursor Pack](https://www.gnome-look.org/p/2332234) (Cursor)
 
 ### Fonts
