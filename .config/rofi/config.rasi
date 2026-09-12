@@ -9,14 +9,15 @@ configuration {
 
 * {
     /* Mapping pywal variables to your layout names */
-    bg-col:       #2E3440E0;
-    fg-col:       #81A1C1;
-    selected-col: #81A1C1;     /* Using an accent for the selection */
-    border-col:   #2E3440E0;
+    bg-col:       #1e1c18e0;
+    fg-col:       #c0501a;
+    selected-col: #c0501a;     /* Using an accent for the selection */
+    border-col:   #1e1c18e0;
     
     background-color: @bg-col;
     text-color: @fg-col;
 }
+
 
 window {
     width: 650px;

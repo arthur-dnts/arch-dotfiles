@@ -1,13 +1,13 @@
 * {
-    bg0:    #2E3440E0;
-    bg1:    #2E3440E0;
-    bg2:    #81A1C1;
-    bg3:    #81A1C1;
-    bg4:    #2E3440;
-    fg0:    #81A1C1;
-    fg1:    #81A1C1;
-    fg2:    #81A1C1;
-    fg3:    #81A1C1;
+    bg0:    #1e1c18e0;
+    bg1:    #1e1c18e0;
+    bg2:    #c0501a;
+    bg3:    #c0501a;
+    bg4:    #1e1c18;
+    fg0:    #c0501a;
+    fg1:    #c0501a;
+    fg2:    #c0501a;
+    fg3:    #c0501a;
 }
 
 @import "templates/default.rasi"

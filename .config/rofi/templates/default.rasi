@@ -12,29 +12,29 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    border-colour:               #81a1c1;
-    handle-colour:               #81a1c1;
-    background-colour:           #2E3440E0;
-    foreground-colour:           #eceff4;
-    alternate-background:        #3b4252;
-    normal-background:           #2E3440E0;
-    normal-foreground:           #eceff4;
-    urgent-background:           #bf616a;
-    urgent-foreground:           #2E3440E0;
-    active-background:           #81a1c1;
-    active-foreground:           #2E3440E0;
-    selected-normal-background:  #81a1c1E0;
-    selected-normal-foreground:  #2E3440E0;
-    selected-urgent-background:  #81a1c1E0;
-    selected-urgent-foreground:  #2E3440E0;
-    selected-active-background:  #bf616aE0;
-    selected-active-foreground:  #2E3440E0;
-    alternate-normal-background: #2E3440E0;
-    alternate-normal-foreground: #eceff4;
-    alternate-urgent-background: #bf616a;
-    alternate-urgent-foreground: #2E3440E0;
-    alternate-active-background: #81a1c1;
-    alternate-active-foreground: #2E3440E0;
+    border-colour:               #c7c7c7;
+    handle-colour:               #a8d54b;
+    background-colour:           #1e1c18e0;
+    foreground-colour:           #ede5d8;
+    alternate-background:        #1e1c18;
+    normal-background:           #1e1c18e0;
+    normal-foreground:           #ede5d8;
+    urgent-background:           #6dcbfa;
+    urgent-foreground:           #1e1c18e0;
+    active-background:           #c7c7c7;
+    active-foreground:           #1e1c18e0;
+    selected-normal-background:  #a8d54be0;
+    selected-normal-foreground:  #1e1c18e0;
+    selected-urgent-background:  #c7c7c7e0;
+    selected-urgent-foreground:  #1e1c18e0;
+    selected-active-background:  #6dcbfae0;
+    selected-active-foreground:  #a8d54be0;
+    alternate-normal-background: #a8d54be0;
+    alternate-normal-foreground: #ede5d8;
+    alternate-urgent-background: #6dcbfa;
+    alternate-urgent-foreground: #1e1c18e0;
+    alternate-active-background: #c7c7c7;
+    alternate-active-foreground: #1e1c18e0;
 }
 
 /*****----- Main Window -----*****/

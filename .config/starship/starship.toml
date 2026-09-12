@@ -1,38 +1,39 @@
 format = """
-[ ╭](fg:white)\
-[](fg:white)\
-[󰣇 ](bg:white fg:black)\
-[ ](fg:white bg:light_green)\
+[ ╭](fg:fg8)\
+[](fg:fg8)\
+[󰣇 ](bg:fg8 fg:fg1)\
+[ ](fg:fg8 bg:fg10)\
 $directory\
-[ ](fg:light_green bg:cyan)\
+[ ](fg:fg10 bg:fg7)\
 $git_branch\
 $git_status\
-[ ](fg:cyan)\
+[ ](fg:fg7)\
 $fill\
-$jobs $cmd_duration [](fg:blue)$time\
-[](fg:dark_blue bg:blue)\
+$jobs $cmd_duration [](fg:fg5)$time\
+[](fg:fg9 bg:fg5)\
 $python\
 $c\
 $nodejs\
 $java\
 $lua\
-[ ](fg:dark_blue)\
+[ ](fg:fg9)\
 $battery\
 $line_break\
-[ ╰](white)\
+[ ╰](fg8)\
 $character
 """
 
-palette = "nord"
+palette = "everforest"
 add_newline = true
 scan_timeout = 50
 
 [fill]
+style = "fg:fg8"
 symbol = " "
 
 [directory]
-style = "fg:black bg:light_green"
-format = "[$path]($style)"
+style = "fg:fg1 bg:fg10"
+format = "[$path ]($style)"
 truncation_length = 2
 truncation_symbol = " /"
 truncate_to_repo = false
@@ -44,28 +45,28 @@ truncate_to_repo = false
 "Pictures" = " "
 
 [git_branch]
-style = "fg:black bg:cyan"
+style = "fg:fg1 bg:fg7"
 symbol = " "
 format = "[$symbol$branch ]($style)"
 
 [git_status]
-style = "fg:black bg:cyan"
+style = "fg:fg1 bg:fg7"
 format = "[$all_status$ahead_behind ]($style)"
 
 [jobs]
 symbol = ""
-style = "fg:red"
+style = "fg:fg2"
 number_threshold = 1
 format = "[ $symbol]($style)"
 
 [cmd_duration]
 min_time = 500
-style = "white"
+style = "fg8"
 format = "[$duration]($style)"
 
 [time]
 disabled = false
-style = "fg:black bg:blue"
+style = "fg:fg1 bg:fg5"
 format = "[$time ]($style)"
 use_12hr = true
 time_format = "   %I:%M %p"
@@ -78,93 +79,146 @@ charging_symbol = "󰂄 "
 [[battery.display]]
 threshold = 100
 discharging_symbol = "󰁹 "
-style = "green"
+style = "fg3"
 
 [[battery.display]]
 threshold = 90
 discharging_symbol = "󰂂 "
-style = "green"
+style = "fg3"
 
 [[battery.display]]
 threshold = 80
 discharging_symbol = "󰂁 "
-style = "green"
+style = "fg3"
 
 [[battery.display]]
 threshold = 70
 discharging_symbol = "󰂀 "
-style = "green"
+style = "fg3"
 
 [[battery.display]]
 threshold = 60
 discharging_symbol = "󰁿 "
-style = "green"
+style = "fg3"
 
 [[battery.display]]
 threshold = 50
 discharging_symbol = "󰁾 "
-style = "yellow"
+style = "fg4"
 
 [[battery.display]]
 threshold = 40
 discharging_symbol = "󰁽 "
-style = "yellow"
+style = "fg4"
 
 [[battery.display]]
 threshold = 30
 discharging_symbol = "󰁼 "
-style = "yellow"
+style = "fg4"
 
 [[battery.display]]
 threshold = 20
 discharging_symbol = "󰁻 "
-style = "red"
+style = "fg2"
 
 [[battery.display]]
 threshold = 10
 discharging_symbol = "󰁺 "
-style = "red"
+style = "fg2"
 
 [character]
 format = "$symbol "
-error_symbol = "[](red)"
-success_symbol = "[󰁔](white)"
+error_symbol = "[](fg2)"
+success_symbol = "[󰁔](fg8)"
 
 [python]
-style = "fg:black bg:dark_blue"
+style = "fg:fg1 bg:fg9"
 symbol = ""
 pyenv_prefix = ""
 format = "[ $symbol $virtualenv $version]($style)"
 
 [c]
-style = "fg:black bg:dark_blue"
+style = "fg:fg1 bg:fg9"
 symbol = ""
 format = "[ $symbol $version]($style)"
 
 [nodejs]
-style = "fg:black bg:dark_blue"
+style = "fg:fg1 bg:fg9"
 symbol = "󰎙"
 format = "[ $symbol $version]($style)"
 
 [java]
-style = "fg:black bg:dark_blue"
+style = "fg:fg1 bg:fg9"
 symbol = ""
 format = "[ $symbol $version]($style)"
 
 [lua]
-style = "fg:black bg:dark_blue"
+style = "fg:fg1 bg:fg9"
 symbol = ""
 format = "[ $symbol $version]($style)"
 
 [palettes.nord]
-black = "#2E3440"
-red = "#BF616A"
-green = "#A3BE8C"
-yellow = "#EBCB8B"
-blue = "#81A1C1"
-magenta = "#B48EAD"
-cyan = "#88C0D0"
-white = "#E5E9F0"
-dark_blue = "#5E81AC"
-light_green = "#8FBCBB"
-gray = "#4c566A"
+fg1 =  "#2E3440"
+fg2 =  "#BF616A"
+fg3 =  "#A3BE8C"
+fg4 =  "#EBCB8B"
+fg5 =  "#81A1C1"
+fg6 =  "#B48EAD"
+fg7 =  "#88C0D0"
+fg8 =  "#E5E9F0"
+fg9 =  "#5E81AC"
+fg10 = "#8FBCBB"
+fg11 = "#4c566A"
+
+[palettes.gruvbox]
+fg1 =  "#1d2021"
+fg2 =  "#ea6962"
+fg3 =  "#a9b665"
+fg4 =  "#d8a657"
+fg5 =  "#a9b665"
+fg6 =  "#d3869b"
+fg7 =  "#d8a657"
+fg8 =  "#d4be98"
+fg9 =  "#89b482"
+fg10 = "#ea6962"
+fg11 = "#928374"
+
+[palettes.ayu]
+fg1 =  "#3E4B59"
+fg2 =  "#ed8274"
+fg3 =  "#CCCAC2"
+fg4 =  "#CCCAC2"
+fg5 =  "#6E7A89"
+fg6 =  "#7A8695"
+fg7 =  "#8692A1"
+fg8 =  "#929EAD"
+fg9 =  "#9EAAB9"
+fg10 = "#B5B9BE"
+fg11 = "#CCCAC2"
+
+[palettes.everforest]
+fg1 =  "#1E2326"
+fg2 =  "#ed8274"
+fg3 =  "#D3C6AA"
+fg4 =  "#D3C6AA"
+fg5 =  "#859966"
+fg6 =  "#D3C6AA"
+fg7 =  "#a7c080"
+fg8 =  "#64734c"
+fg9 =  "#64734c"
+fg10 = "#859966"
+fg11 = "#D3C6AA"
+
+[palettes.stonehaven]
+fg1 =  "#1e1c18"
+fg2 =  "#c0501a"
+fg3 =  "#6e9e54"
+fg4 =  "#808fa0"
+fg5 =  "#b89a30"
+fg6 =  "#9e6e8a"
+fg7 =  "#b89a30"
+fg8 =  "#b0a090"
+fg9 =  "#6e9e54"
+fg10 = "#c0501a"
+fg11 = "#5c8a7a"
+

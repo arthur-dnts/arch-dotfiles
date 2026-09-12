@@ -27,14 +27,12 @@
 
 ### Theme and cursor
 
-- [Nordic Darker GTK Theme](https://www.gnome-look.org/p/1267246) (Theme)
-- [Papirus White](https://www.gnome-look.org/p/1166289/) (Icons)
-- [Ruri Rinka Cursor Pack](https://www.gnome-look.org/p/2332234) (Cursor)
+- [Celestial GTK Theme](https://www.gnome-look.org/p/2324958) (Theme)
+- [Papirus Green](https://www.gnome-look.org/p/1166289/) (Icons)
+- [Catppuccin Mocha Cursors - Green](https://www.gnome-look.org/p/2135236) (Cursor)
 
 ### Fonts
-
-- [Nerd Fonts](https://www.nerdfonts.com/) (For terminal and NeoVim)
-- [JetBrains Mono](https://www.jetbrains.com/lp/mono/) (For system-wide)
+- [JetBrains Mono Nerd Font](https://www.jetbrains.com/lp/mono/) (For system-wide and Terminal)
 
 <div align="center">
     <h1>Programs</h1>
